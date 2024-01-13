@@ -57,7 +57,8 @@ public class Service {
     private final UUIDFactory uuidFactory;
     
     public void execute() {
-        UUID efficientUUID = uuidFactory.generateUUID();
+        UUID efficientUUID = uuidFactory.generateUUID(); // uuid
+        String hexEfficientUUID = uuidFactory.generateUUIDHex(); // hex uuid
         // ...
     }
 }
