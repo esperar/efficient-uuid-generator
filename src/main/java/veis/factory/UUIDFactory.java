@@ -1,6 +1,7 @@
 package veis.factory;
 
 import veis.AbstractUUIDGenerator;
+import veis.converter.HexConverter;
 import veis.converter.UUIDConverter;
 
 import java.util.UUID;
@@ -19,5 +20,10 @@ public class UUIDFactory {
     public UUID generateUUID() {
         byte[] byteArray = generator.createUUID();
         return UUIDConverter.convertByteArrayToUUID(byteArray);
+    }
+
+    public String generateUUIDHex() {
+        byte[] byteArray = generator.createUUID();
+        return HexConverter.bytesToHex(byteArray);
     }
 }

@@ -20,3 +20,4 @@ public class UUIDComponentAutoConfiguration {
         return new UUIDFactory(new EfficientUUID1Generator());
     }
 }
+
