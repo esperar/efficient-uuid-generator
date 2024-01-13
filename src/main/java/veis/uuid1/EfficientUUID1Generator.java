@@ -16,6 +16,10 @@ public class EfficientUUID1Generator implements AbstractUUIDGenerator {
      *
      * As it is a value generated based on time,
      * arranging the order well allows for the creation of as sequential a value as possible.
+     *
+     * In summary, by arranging the fields in the order of 3 - 2 - 1 - 4 - 5,
+     * it is possible to have sequential values up to a certain point in the 3rd field. (This is not an absolute rule.)
+     *
      * @return uuid byte[]
      */
     @Override
