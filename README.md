@@ -1,18 +1,5 @@
 # Efficient UUID Generator
 
-```java
-public class Service {
-    // Auto Configuration and You can do DI.
-    private final UUIDFactory uuidFactory;
-    
-    public void execute() {
-        UUID efficientUUID = uuidFactory.generateUUID();
-        // ...
-    }
-}
-
-```
-
 ### Generating Sequential UUIDs
 UUID V1 is created with the following information in each field:  
 `Timestamp` - `Timestamp` - `Timestamp & Version` - `Variant & Clock sequence` - `Node id`
@@ -61,7 +48,21 @@ would be more efficient.
 In summary, by arranging the fields in the order of 3 - 2 - 1 - 4 - 5,   
 it is possible to have sequential values up to a certain point in the 3rd field. (This is not an absolute rule.)
 
-The results are as follows:
+<br>
+
+### How to use?
+```java
+public class Service {
+    // Auto Configuration and You can do DI.
+    private final UUIDFactory uuidFactory;
+    
+    public void execute() {
+        UUID efficientUUID = uuidFactory.generateUUID();
+        // ...
+    }
+}
+
+```
 
 <br>
 
