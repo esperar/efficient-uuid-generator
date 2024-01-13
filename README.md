@@ -1,5 +1,18 @@
 # Efficient UUID Generator
 
+```java
+public class Service {
+    // Auto Configuration and You can do DI.
+    private final UUIDFactory uuidFactory;
+    
+    public void execute() {
+        UUID efficientUUID = uuidFactory.generateUUID();
+        // ...
+    }
+}
+
+```
+
 ### Generating Sequential UUIDs
 UUID V1 is created with the following information in each field:  
 `Timestamp` - `Timestamp` - `Timestamp & Version` - `Variant & Clock sequence` - `Node id`
