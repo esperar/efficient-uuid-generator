@@ -1,7 +1,7 @@
 # Efficient UUID Generator
 
 ### Generating Sequential UUIDs
-UUID V1 is created with the following information in each field:
+UUID V1 is created with the following information in each field:  
 `Timestamp` - `Timestamp` - `Timestamp & Version` - `Variant & Clock sequence` - `Node id`
 
 As it is a value generated based on time,  
