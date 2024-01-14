@@ -11,10 +11,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:3.0.2'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.5'
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.0.2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.5'
     implementation "com.fasterxml.uuid:java-uuid-generator:4.0.1"
 }
 
