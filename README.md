@@ -51,6 +51,17 @@ it is possible to have sequential values up to a certain point in the 3rd field.
 <br>
 
 ### How to use?
+
+```gradle
+dependencies {
+    implementation files('https://github.com/esperar/efficient-uuid-generator/blob/master/build/libs/uuid-generator-1.0-SNAPSHOT.jar')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+```
+
 ```java
 public class Service {
     // Auto Configuration and You can do DI.
